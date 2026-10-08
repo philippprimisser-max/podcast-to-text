@@ -227,7 +227,8 @@ def slug(text: str, maxlen: int = 60) -> str:
 # --------------------------------------------------------------------------- transcription
 
 def default_threads() -> int:
-    # int8 with 8+ CTranslate2 threads silently dropped 20-30 s passages in my tests; 4 is nearly as fast.
+    # int8 with 8 CTranslate2 threads silently dropped passages in 13/15 test runs, 4 threads in 1/15 (float32: 0/15).
+    # 4 reduces the risk but is no guarantee; use --compute-type float32 or check with faster-whisper-gap-check.
     return max(1, min(4, os.cpu_count() or 1))
 
 
