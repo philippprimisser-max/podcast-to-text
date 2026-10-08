@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+<channel>
+  <title>Test Show</title>
+  <item>
+    <title>Episode Two: With Transcript</title>
+    <guid>ep-2</guid>
+    <pubDate>Tue, 06 Oct 2026 08:00:00 +0000</pubDate>
+    <itunes:duration>00:01:00</itunes:duration>
+    <enclosure url="{BASE}/gettysburg.mp3" type="audio/mpeg" length="1"/>
+    <podcast:transcript url="{BASE}/ep2.vtt" type="text/vtt"/>
+    <podcast:transcript url="{BASE}/ep2.srt" type="application/srt"/>
+  </item>
+  <item>
+    <title>Episode One: Gettysburg Address</title>
+    <guid>ep-1</guid>
+    <pubDate>Mon, 05 Oct 2026 08:00:00 +0000</pubDate>
+    <enclosure url="{BASE}/gettysburg.mp3" type="audio/mpeg" length="1"/>
+  </item>
+  <item>
+    <title>No audio here</title>
+  </item>
+</channel>
+</rss>

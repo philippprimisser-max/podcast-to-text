@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+transcripts/
+.pytest_cache/
+*.mp3
+!tests/fixtures/*.mp3
