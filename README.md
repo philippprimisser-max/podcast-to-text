@@ -19,7 +19,7 @@ transcripts/2026-10-07-hpr4743-wl-copy.json
 ## What it does
 
 1. **Finds the episode.** RSS feeds are read directly. For Apple Podcasts links it asks Apple's public lookup API for the show's own RSS feed; the audio always comes from the publisher, never from Apple.
-2. **Uses the publisher's transcript if there is one.** Many feeds already ship a transcript via the Podcasting 2.0 `<podcast:transcript>` tag. Downloading it is instant and usually better than a machine transcript. Pass `--force` to transcribe anyway.
+2. **Uses the publisher's transcript if there is one.** Some feeds already ship a transcript via the Podcasting 2.0 `<podcast:transcript>` tag. Downloading it is instant and usually better than a machine transcript. Pass `--force` to transcribe anyway. (How common is that? In Apple's top charts for US, UK, DE and AT on 8 October 2026, 18 of 109 feeds had a transcript on the newest episode; script and data in [`research/`](research/).)
 3. **Otherwise transcribes locally** with faster-whisper (int8, voice activity detection on) and writes four formats:
    - `.txt` plain text, new paragraph after pauses longer than 2 seconds
    - `.srt` / `.vtt` subtitles with timestamps
