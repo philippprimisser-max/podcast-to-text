@@ -108,6 +108,13 @@ SKIP_SLOW=1 python -m pytest -q
 
 The test audio is the [LibriVox](https://librivox.org) recording of the Gettysburg Address (public domain).
 
+## More small tools from the same workflow
+
+- [faster-whisper-gap-check](https://github.com/philippprimisser-max/faster-whisper-gap-check): find speech that is missing from a Whisper transcript.
+- [whisper-word-captions](https://github.com/philippprimisser-max/whisper-word-captions): word-by-word highlighted captions with ffmpeg.
+
+Write-ups: [DEV.to/@prime619](https://dev.to/prime619)
+
 ## Related
 
 - [Podcast Transcriber](https://apify.com/prime619/podcast-transcriber) on Apify: a hosted, paid version (pay per audio minute) with scheduling and "only new episodes". Disclosure: I built it. This repository is free and complete on its own.
